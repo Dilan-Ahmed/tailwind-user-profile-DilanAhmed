@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Card</title>
+    <!-- Insert TailwindCSS CDN link here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!-- Source that helped me figure out how to center the card both horizontally and vertically :
+    https://daily-dev-tips.com/posts/center-elements-with-tailwind-css/
+  -->
+  <body class="bg-blue-200 grid h-screen place-items-center">
+    <!-- Start building your user profile card here flex justify-center items-center-->
+
+    <div
+      class="bg-gray-200 p-4 rounded-lg shadow-lg md:max-w-lg mx-auto  "
+    >
+      <div
+        class="bg-white flex flex-wrap justify-center items-center bg-white p-8 rounded-lg shadow-md md:max-w-lg"
+      >
+      <div>
+        <img
+          src="https://shorturl.at/wGHP8"
+          alt="Pro-Pic"
+          class="rounded-full w-24 h-24 sm:w-24 sm:h-24 md:w-32 md:h-32 border-solid border-2 hover:shadow-lg"
+        />
+        </div>
+
+        <div class="ml-4 text-left md:text-left sm:text-center">
+            <h2 class="text-lg font-bold">Dylan Ahmed</h2>
+            <p class="text-grey-900 text-sm">Web Developer</p>
+            <p class="text-grey-750 text-sm">
+              JavaScript Developer<br />something@anything.who
+            </p>
+
+           
+          </div>
+          <div>
+          <button
+          class="bg-blue-500 text-white py-2 px-4 ml-4 rounded-full justify-center hover:bg-violet-800 mt-4"
+        >
+          Follow
+        </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
